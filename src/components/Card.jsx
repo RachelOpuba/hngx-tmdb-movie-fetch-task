@@ -9,6 +9,7 @@ import { Link, useParams } from "react-router-dom";
 
 const Card = () => {
   const [movies, setMovies] = useState([]);
+  const [error, setError] = useState(null);
   const API_KEY = "a8359b5355811000de60e14998dce489";
   const API_URL = "https://api.themoviedb.org/3";
 
@@ -23,7 +24,7 @@ const Card = () => {
       });
       setMovies(response.data.results.slice(0, 10)); // Slice the first 10 movies
     } catch (error) {
-      console.error("Error fetching data:", error);
+      setError("Error fetching data. Please try again later.");
     }
   };
 
@@ -89,6 +90,11 @@ const Card = () => {
             </div>
           ))}
         </>
+      )}
+      {error && (
+        <div className="text-red-500 font-bold flex justify-center items-center w-[100vw] border">
+          <p>{error}</p>
+        </div>
       )}
     </>
   );

@@ -2,7 +2,7 @@
 
 # Movie Discovery Web Application
 
-This is a movie discovery web application that allows users to search for movies, view details about them, and save their favorite movies. It consumes data from the TMDB API.
+This is a movie discovery web application that allows users to view the top 10 movies from the TMDB API and view details about them. It consumes data from the TMDB API.
 
 ## Features
 
@@ -23,5 +23,44 @@ Follow these instructions to run the project locally on your machine.
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/movie-discovery-app.git
+   git clone https://github.com/RachelOpuba/hngx-tmdb-movie-fetch-task.git
    ```
+
+2. Change to the project directory:
+
+   ```bash
+   cd HNGX-STAGE-2-TASK
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and access the application at http://localhost:5173/.
+
+### Usage
+
+- Visit the homepage to see the top 10 movies.
+- Click on a movie card to view its details.
+- Enjoy exploring and discovering movies!
+
+### Deployment
+
+The project is hosted on Netlify.
+
+### Contributing
+
+Contributions are welcome! If you have any improvements or feature suggestions, please open an issue or submit a pull request.
+
+### Acknowledgments
+
+- TMDB API for providing movie data.
+- HNG INTERNSHIP for providding the internship opportunity.
